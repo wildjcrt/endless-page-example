@@ -11,6 +11,18 @@ class PostsController < ApplicationController
     end
   end
 
+  # GET /posts/ajax_page
+  # GET /posts/ajax_page.json
+  def ajax_page
+    @posts = Post.page(params[:page]).per(1)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @posts }
+      format.js
+    end
+  end
+
   # GET /posts/endless_page
   # GET /posts/endless_page.json
   def endless_page
