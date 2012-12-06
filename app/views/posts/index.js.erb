@@ -1,2 +1,3 @@
 $("<%= j(render @posts) %>").appendTo($("table"));
 $(".paginate").html("<%= j(paginate @posts, :remote => true) %>");
+checkScroll();
