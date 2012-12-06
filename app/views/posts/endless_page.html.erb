@@ -1,4 +1,7 @@
-<%= javascript_include_tag "posts" %>
+<% content_for(:header_js) do %>
+  <%= javascript_include_tag "posts" %>
+<% end %>
+
 
 <h1>Listing posts</h1>
 
