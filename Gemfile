@@ -1,12 +1,10 @@
 source 'https://rubygems.org'
+ruby "1.9.3"
 
 gem 'rails', '3.2.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,10 +22,16 @@ gem 'jquery-rails'
 gem 'kaminari'
 
 group :development do
+  gem 'sqlite3'
   gem 'hirb'
   gem 'hirb-unicode'
   gem 'wirble'
   gem 'annotate', ">=2.5.0"
+end
+
+group :production do
+  gem 'pg'
+  gem 'thin'
 end
 
 # To use ActiveModel has_secure_password
