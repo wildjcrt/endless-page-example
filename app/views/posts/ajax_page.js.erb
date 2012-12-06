@@ -1,2 +1,2 @@
-$("<%= j(render @posts) %>").appendTo($("table"));
+$("table tr").replaceWith($("<%= j(render @posts) %>"));
 $(".paginate").html("<%= j(paginate @posts, :remote => true) %>");
