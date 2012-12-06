@@ -21,6 +21,14 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'kaminari'
+
+group :development do
+  gem 'hirb'
+  gem 'hirb-unicode'
+  gem 'wirble'
+  gem 'annotate', ">=2.5.0"
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
