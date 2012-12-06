@@ -8,7 +8,15 @@
 </head>
 <body>
 
-<%= yield %>
+  <div class="navbar main-navbar navbar-fixed-top">
+    <ul>
+      <li><%= link_to("回到首頁", root_path) %></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
