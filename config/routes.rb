@@ -1,5 +1,10 @@
 EndlessPageExample::Application.routes.draw do
-  resources :posts
+  resources :posts do
+    collection do
+      get "ajax_page"
+      get "endless_page"
+    end
+  end
 
 
   # The priority is based upon order of creation:
