@@ -7,6 +7,10 @@ Use below part to easily create endless page in your rails application.
 * j method
 * partial
 
+## Demo Site
+
+* [Endless Page Example](http://endless-page-example.herokuapp.com/)
+
 Reference:
 
 * [RailsCasts #114 Endless Page](http://railscasts.com/episodes/114-endless-page)
